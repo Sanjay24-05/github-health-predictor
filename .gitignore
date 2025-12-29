@@ -1,0 +1,19 @@
+# Environments
+.venv/
+.env
+
+# Python
+__pycache__/
+*.py[cod]
+
+# Data (Too large for Git)
+data/raw/
+data/processed/
+data/features/
+
+# Models
+models/*.pkl
+
+# IDEs
+.vscode/
+.idea/
