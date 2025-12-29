@@ -25,6 +25,9 @@ LABEL_COLUMN = "at_risk"
 def engineer_features():
     # Load labeled data
     df = pd.read_csv(RAW_INPUT)
+    # Create derived features
+    df["fork_star_ratio"] = df["forks"] / (df["stars"] + 1)
+
 
     # Safety checks
     missing = set(FEATURE_COLUMNS + [LABEL_COLUMN]) - set(df.columns)

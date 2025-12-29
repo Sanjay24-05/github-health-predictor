@@ -44,9 +44,9 @@ def collect():
     df_existing, seen = load_existing()
 
     queries = [
-        ("language:python stars:>500", 300),
-        ("language:javascript stars:>500", 300),
-        ("archived:true stars:>100", 200),
+        ("language:python stars:>500", 400),
+        ("language:javascript stars:>500", 400),
+        ("archived:true stars:>100", 300),
     ]
 
     new_rows = []
